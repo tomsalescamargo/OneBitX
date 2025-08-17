@@ -1,0 +1,64 @@
+// Não era necessário, apenas treinando o mixin
+@mixin title-style($width, $margin-bottom) {
+    width: $width;
+    margin-bottom: $margin-bottom;
+}
+
+.container00 {
+    &.container01{
+        background-image: url(../images/home/01.jpg);
+    }
+
+    &.container02{
+        background-image: url(../images/home/02.jpg);
+    }
+
+    &.container03{
+        background-image: url(../images/home/03.gif);
+    }
+
+    &.container04{
+        background-image: url(../images/home/04.jpg);
+    }
+}
+
+.titlePadding {
+    padding-top: 12.5rem;
+}
+
+.shortTitle {
+    // para haver quebra de linha
+    width: 34.375rem;
+
+    margin-bottom: 1.55rem;
+    // (não utilizei mixin devido à didática)
+}
+
+.mediumTitle {
+    @include title-style(40.625rem, 1.55rem);
+}
+
+
+// RESPONSIVIDADE - MEDIA QUERIES
+
+// até 750px
+@media screen and (max-width: 46.875rem) {
+    .titlePadding {
+        padding-top: 7.5rem;
+    }
+
+    .shortTitle,
+    .mediumTitle {
+        width: auto;
+        font-size: 3.125rem;
+    }
+}
+
+// até 380px
+@media screen and (max-width: 23.75rem) {
+    .shortTitle,
+    .mediumTitle {
+        width: auto;
+        font-size: 2.5rem;
+    }
+}

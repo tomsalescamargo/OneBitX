@@ -1,0 +1,17 @@
+// Importanto Fonte
+@import url("https://fonts/googleapis.com/css2?family=Rubik:wght@400;514&display=swap");
+
+// Importando variáveis
+@import "./commonElements/variables.scss";
+
+// Importando common elements
+@import "./commonElements/commonElements.scss";
+
+// Importando home
+@import "./pages/home.scss";
+
+// Importando falcon9
+@import "./pages/falcon9.scss";
+
+// Importando humanSpace
+@import "./pages/humanSpace.scss";

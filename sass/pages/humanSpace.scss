@@ -1,0 +1,155 @@
+.container00 {
+    &.container08 {
+        background-image: url(../images/humanFlight/01.jpg);
+    }
+
+    &.container09 {
+        background-image: url(../images/humanFlight/02.jpg);
+    }
+
+    &.container10 {
+        background-image: url(../images/humanFlight/03.jpg);
+    }
+
+    &.container11 {
+        background-image: url(../images/humanFlight/04.jpg);
+    }
+
+    &.container12 {
+        background-image: url(../images/humanFlight/05.jpg);
+    }
+}
+
+.container01Content {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .titleHuman {
+        font-size: 7.5rem;
+    }
+
+    .subTitleHuman {
+        margin-top: 1.25rem;
+        margin-bottom: 3.125rem;
+        font-size: 1.875rem;
+        font-weight: 300;
+    }
+}
+
+.earthDesc {
+    background-color: #000;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .textDescEarth {
+        color: $table-item;
+        font-size: 1.25rem;
+        font-weight: 400;
+        width: 50rem;
+    }
+}
+
+// Direita
+.containerRightContent {
+    margin-left: 55%;
+    padding-top: 15%;
+}
+
+.titleSection {
+    font-size: 3.75rem;
+    font-weight: bold;
+}
+
+.subTitle {
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+}
+
+// Esquerda
+.containerLeftContent {
+    margin-left: 5%;
+    padding-top: 15%;
+}
+
+
+// RESPONSIVIDADE - Media Queries
+
+// 768px - tablet
+@media screen and (max-width: 48rem) {
+
+    .container01Content {
+    
+        .titleHuman {
+            font-size: 5.625rem;
+        }
+
+        .img {
+            width: 9.375rem;
+        }
+    }
+
+    .containerRightContent {
+        margin-left: 15%;
+    }
+
+    .containerLeftContent {
+        margin-left: 15%;
+    }
+
+    .earthDesc {
+        .textDescEarth {
+            color: $table-item;
+            font-weight: 400;
+            font-size: 1rem;
+            width: auto;
+        }
+    }
+}
+
+// 610px
+@media screen and (max-width: 38.125rem) {
+    .container01Content {
+        .titleHuman {
+            font-size: 3.75rem;
+        }
+
+        .subTitleHuman {
+            font-size: 1.5rem;
+        }
+    }
+
+    .containerRightContent {
+        margin-left: 5%;
+    }
+
+    .containerLeftContent {
+        margin-left: 5%
+    }
+
+    .titleSection {
+        font-size: 3.125rem;
+    }
+}
+
+
+// 380px
+@media screen and (max-width: 23.75rem) {
+    .container01Content {
+        .titleHuman {
+            font-size: 2.8rem;
+        }
+
+        .subTitleHuman {
+            font-size: 1rem;
+        }
+    }
+
+    img {
+        width: 100px;
+    }
+}

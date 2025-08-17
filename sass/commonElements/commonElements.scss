@@ -1,0 +1,104 @@
+.header {
+    font-size: 0.75rem;
+    font-weight: bold;
+
+    #navItem {
+        &:hover {
+            color: $link-hover;
+        }
+    }
+}
+
+// Container comum entre todos
+.container00 {
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// Gif da flecha no container01
+.arrowDown {
+    // para ficar na mesma linha do botão
+    display: inline-block;
+
+    width: 5.6rem;
+    margin-top: 0.3rem;
+}
+
+.logoPc {
+    width: 15rem;
+    margin-left: -0.6rem;
+    margin-right: 2.5rem;
+}
+
+#button {
+    padding: $padding-button;
+    border: 2px solid #fff;
+}
+
+.downloadDesc {
+    background-color: #000;
+    height: 90vh;
+    padding-top: 25%;
+
+    button {
+        border: 2px solid #fff;
+        margin-right: 0.6rem;
+    }
+}
+
+.footer {
+    background-color: #000;
+    height: 10vh;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+            color: $link-hover;
+        }
+    }
+
+    .copyTS {
+        color: $copy-color;
+    }
+}
+
+
+// RESPONSIVIDADE - MEDIA QUERIES
+
+// 450px
+@media screen and (max-width: 28.125rem) {
+    .downloadDesc {
+        button {
+            margin: 0.625rem 0;
+        }
+    }
+}
+
+// até 405px
+@media screen and (max-width: 25.313rem) {
+    .logoPc {
+        width: 11.25rem;
+        margin-top: 1rem;
+    }
+
+    .footer {
+        font-size: 0.625rem;
+    }
+}
+
+// até 350px
+@media screen and (max-width: 21.875rem) {
+    .logoPc {
+        width: 9.375rem;
+        margin-top: 1rem;
+    }
+}
